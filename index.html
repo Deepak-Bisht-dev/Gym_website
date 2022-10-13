@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deep's Fitness Website</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap");
+    </style>
+    <style>
+         /* CSS Reset  */
+         body{
+             margin: 8px;
+             padding: 0px;
+             color: white;
+             background-image: url('gym.jpg');
+             /* background-position: center; */
+             background-repeat: no-repeat;
+             background-size: cover;
+             font-family: 'Baloo Bhaijaan 2', cursive;
+             height: 627px;
+         }
+         .left{
+              position: absolute;
+              left: 12px;
+              top: 22px;
+              display: inline-block;
+              /* border: 2px solid red; */
+         }
+         .left img{
+             filter: invert();
+             width: 90px;
+             background-color: black;
+         }
+         .left div{
+             text-align: center;
+             font-size: 13px;
+         }
+         .mid{
+              display: block;
+              width: 52%;
+              /* margin 12px will be set in y axis and auto in x axis means will set this in center */
+              margin: 22px auto;
+              /* border: 2px solid green; */
+         }
+         .right{
+             position: absolute;
+             top: 39px;
+             right: 12px;
+             display: inline-block;
+             /* border: 2px solid yellow; */
+         }
+         .navbar{
+             display: inline-block;
+         }
+         .navbar li{
+             display: inline-block;
+             font-size: 25px;
+          }
+          .navbar li a{
+             color: white;
+             text-decoration: none; /* for removing the underline from the anchor tags */
+             padding: 34px 23px;
+         }
+         .navbar li a:hover, .navbar li a.active{
+             text-decoration: underline;
+             color: grey;
+         }
+         .btn{
+             margin: 0px 9px;
+             background-color: black;
+             color: white;
+             padding: 3px 4px;
+             border: 2px solid grey;
+             border-radius: 10px;
+             cursor: pointer;/*to convert the pointer to hand shape */
+         }
+         .btn:hover{
+             background-color: grey;
+         }
+         .container{
+          /* border: 2px solid white; */
+          margin: 86px 107px;
+          padding: 103px 2px;
+          width: 35%;
+          border-radius: 22px;
+          }
+        }
+      </style>
+    </head>
+    <body>
+    <header class="header">
+      <!-- left box for logo -->
+      <div class="left">
+        <img src="logo.jpg" alt="This was the logo" />
+        <div>Deep Fitness</div>
+      </div>
+      <!-- mid box for navbar -->
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Fitness Calculator</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- Right box for buttons -->
+      <div class="right">
+        <button class="btn">Call Us Now</button
+        ><button class="btn">Email Us</button>
+      </div>
+    </header>
+    <div class="container">
+      <h1>Join the best gym of Delhi now</h1>
+      <form action="noaction.php">
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your name" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your name" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your name" />
+        </div>
+
+        <button class="btn">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
